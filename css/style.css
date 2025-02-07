@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: var(--general-font);
+    font-size: 16px;
+    color: #333333;
+}
+
+:root{
+    --heading-font: "Saira Semi Condensed", serif;
+    --general-font: "Inter", serif;
+}
+
+
+/* -------------------header css -------------------- */
+
+header .top-header{
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .top-header nav{
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+header .top-header .social-media{
+    display: flex;
+    gap: 20px;
+}
+
+header .navigattion-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    gap: 100px;
+}
+
+header .navigattion-bar ul{
+    display: flex;
+    gap: 50px;
+}
+header .navigattion-bar ul li{
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+header .navigattion-bar nav{
+    flex-grow: 1;
+}
+
+header .navigattion-bar .buttons{
+    display: flex;
+    gap: 20px;
+}
+header .navigattion-bar .buttons button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+
+/* css variable  */
