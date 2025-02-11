@@ -36,6 +36,7 @@ img{
     color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 30px;
 }
 /* css variable  */
 :root{
@@ -100,14 +101,9 @@ header .navigattion-bar .buttons button{
 
 
 .banner-section{
-    display: flex;
-}
-.banner-section .left-news{
-   width: 70%;
-}
-.banner-section .right-news{
-   width: 30%;
-
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px 2px;
 }
 
 .banner-news{
@@ -143,10 +139,67 @@ color: white;
     font-weight: 600;
 }
 
-.banner-section .left-news .banner-news{
-    height: 500px;
+.banner-section .banner-news:first-child{
+    grid-row: span 2;
 }
 
-.banner-section .right-news .banner-news{
-height: 250px;
+.news-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-card img{
+    height: 250px;
+}
+
+.news-card .news-title{
+font-family: var(--heading-font);
+font-size: 22px;
+margin-block: 10px;
+line-height: 32px;
+}
+
+.news-card .news-title:hover{
+    color: var(--primary-color);
+}
+
+.news-card time{
+    font-size: 12px;
+    color: #383838;
+}
+
+.editors-peack{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+}
+
+.horizontal-news-card{
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 20px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.horizontal-news-card .category{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.horizontal-news-card .title{
+    font-family: var(--heading-font);
+    font-size: 22px;
+}
+
+.horizontal-news-card:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
